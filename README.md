@@ -1,11 +1,4 @@
 # cody_work_day_scheduler_hw_5
 
 
-I don't care if Monday's blue
-Tuesday's grey and Wednesday too
-Thursday, I don't care about you
-It's Friday, I'm in love
-Monday you can fall apart
-Tuesday, Wednesday break my heart
-Oh, Thursday doesn't even start
-It's Friday, I'm in love
+Boys Don't Cry is the Cure's first compilation album. Released in February 1980, this album is composed of several tracks from the band's May 1979 debut album Three Imaginary Boys with material from the band's 1978-1979 era.
