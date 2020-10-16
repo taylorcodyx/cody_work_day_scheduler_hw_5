@@ -12,13 +12,14 @@ $(document).ready(function () {
 
 console.log('test')
     function hourUpdater() {
+//get current hours        
         var currentHour = moment().hours();
 
-//for loop for time blocks
+//loop to run through the time blocks
     $('.time-block').each(function () {
         var blockHour = parseInt($(this).attr('id').split('-')[1]);
 
-
+// if else statements to designate the time and color shown in planner
         if (blockHour < currentHour) {
             $(this).addClass('past');
         } else if (blockHour === currentHour) {
@@ -34,8 +35,10 @@ console.log('test')
 
     hourUpdater();
 
+//interval check to see if current time needs updating
     var interval = setInterval(hourUpdater, 15000);
 
+//load data that is saved in local storage (Need to get this to work)
     $('#hour-9 .description').val(localStorage.getItem('hour-9'));
     $('#hour-10 .description').val(localStorage.getItem('hour-10'));
     $('#hour-11 .description').val(localStorage.getItem('hour-11'));
@@ -46,5 +49,6 @@ console.log('test')
     $('#hour-16 .description').val(localStorage.getItem('hour-16'));
     $('#hour-17 .description').val(localStorage.getItem('hour-17'));
 
-    $('#currentDay').text(moment().format('dddd, MMMM, Do'));
+
+    $('#currentDay').text(moment().format('MMMM Do YYYY, h:mm:ss a'));
 
